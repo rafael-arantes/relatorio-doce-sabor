@@ -1,0 +1,37 @@
+{
+  "name": "excel-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server that reads Excel Online (Microsoft Graph) or local .xlsx workbooks to build custom reports",
+  "type": "module",
+  "bin": {
+    "excel-mcp": "dist/src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/src/index.js",
+    "login": "tsx scripts/login.ts",
+    "doctor": "tsx scripts/doctor.ts",
+    "report": "tsx report/generate-report.ts",
+    "report:serve": "tsx report/server.ts",
+    "report:start": "node dist/report/server.js",
+    "smoke": "tsx scripts/smoke.ts",
+    "check": "npm run build && tsx scripts/mcp-check.ts",
+    "cline-check": "npm run build && tsx scripts/cline-check.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "exceljs": "^4.4.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3"
+  }
+}

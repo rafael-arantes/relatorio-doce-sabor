@@ -1,0 +1,321 @@
+{
+  "geradoEm": "2026-09-18T15:11:14.299Z",
+  "fonte": "Controle Doce Sabor.xlsx",
+  "fonteAtualizadaEm": "2026-09-18T15:03:45Z",
+  "meses": [
+    "2026-09"
+  ],
+  "porMes": {
+    "2026-09": {
+      "entradas": 3000,
+      "saidas": 22272.54,
+      "fixas": 26738,
+      "despesasTotais": 49010.54,
+      "saldo": -19272.54,
+      "lucro": -46010.54,
+      "lancamentos": 55,
+      "categorias": [
+        {
+          "nome": "Frios",
+          "valor": 10008.42,
+          "quantidade": 13,
+          "pct": 44.9
+        },
+        {
+          "nome": "Quitanda",
+          "valor": 2613.5,
+          "quantidade": 4,
+          "pct": 11.7
+        },
+        {
+          "nome": "Bebidas",
+          "valor": 2221.3,
+          "quantidade": 8,
+          "pct": 10
+        },
+        {
+          "nome": "Carnes",
+          "valor": 2215.55,
+          "quantidade": 1,
+          "pct": 9.9
+        },
+        {
+          "nome": "Diversos",
+          "valor": 1287.21,
+          "quantidade": 14,
+          "pct": 5.8
+        },
+        {
+          "nome": "Embalagens",
+          "valor": 1077.1,
+          "quantidade": 2,
+          "pct": 4.8
+        },
+        {
+          "nome": "Mercado",
+          "valor": 1064.05,
+          "quantidade": 5,
+          "pct": 4.8
+        },
+        {
+          "nome": "Extra",
+          "valor": 800,
+          "quantidade": 4,
+          "pct": 3.6
+        },
+        {
+          "nome": "Impostos",
+          "valor": 439.71,
+          "quantidade": 1,
+          "pct": 2
+        },
+        {
+          "nome": "Fixos",
+          "valor": 385,
+          "quantidade": 1,
+          "pct": 1.7
+        },
+        {
+          "nome": "Contabilidade",
+          "valor": 105.8,
+          "quantidade": 1,
+          "pct": 0.5
+        },
+        {
+          "nome": "Serviços de Terceiros",
+          "valor": 54.9,
+          "quantidade": 1,
+          "pct": 0.2
+        }
+      ],
+      "fornecedores": [
+        {
+          "nome": "Açougue",
+          "valor": 3073.7,
+          "quantidade": 1,
+          "pct": 13.8
+        },
+        {
+          "nome": "Hortifruti",
+          "valor": 2586.5,
+          "quantidade": 3,
+          "pct": 11.6
+        },
+        {
+          "nome": "FN",
+          "valor": 2440.54,
+          "quantidade": 5,
+          "pct": 11
+        },
+        {
+          "nome": "Souza Carnes",
+          "valor": 2215.55,
+          "quantidade": 1,
+          "pct": 9.9
+        },
+        {
+          "nome": "Top Frios",
+          "valor": 1825.8,
+          "quantidade": 1,
+          "pct": 8.2
+        },
+        {
+          "nome": "Comercio de bebidas Antunes",
+          "valor": 1462.24,
+          "quantidade": 3,
+          "pct": 6.6
+        },
+        {
+          "nome": "Frigo Cava",
+          "valor": 1400,
+          "quantidade": 1,
+          "pct": 6.3
+        },
+        {
+          "nome": "Marpel",
+          "valor": 1077.1,
+          "quantidade": 2,
+          "pct": 4.8
+        },
+        {
+          "nome": "Atacadão",
+          "valor": 969.73,
+          "quantidade": 3,
+          "pct": 4.4
+        },
+        {
+          "nome": "Funcionarios",
+          "valor": 800,
+          "quantidade": 4,
+          "pct": 3.6
+        },
+        {
+          "nome": "fornecedor diversos",
+          "valor": 773,
+          "quantidade": 12,
+          "pct": 3.5
+        },
+        {
+          "nome": "Lider Rubbo",
+          "valor": 646.8,
+          "quantidade": 2,
+          "pct": 2.9
+        },
+        {
+          "nome": "Contabilidade",
+          "valor": 545.51,
+          "quantidade": 2,
+          "pct": 2.4
+        },
+        {
+          "nome": "Ambev",
+          "valor": 543.26,
+          "quantidade": 2,
+          "pct": 2.4
+        },
+        {
+          "nome": "Pazzotti",
+          "valor": 450.99,
+          "quantidade": 1,
+          "pct": 2
+        },
+        {
+          "nome": "Edmil",
+          "valor": 408.92,
+          "quantidade": 1,
+          "pct": 1.8
+        },
+        {
+          "nome": "Ivan gas",
+          "valor": 385,
+          "quantidade": 1,
+          "pct": 1.7
+        },
+        {
+          "nome": "Casa de Queijo",
+          "valor": 170.59,
+          "quantidade": 2,
+          "pct": 0.8
+        },
+        {
+          "nome": "Cibal",
+          "valor": 147.8,
+          "quantidade": 2,
+          "pct": 0.7
+        },
+        {
+          "nome": "Sul minas",
+          "valor": 102.29,
+          "quantidade": 1,
+          "pct": 0.5
+        },
+        {
+          "nome": "Caracol",
+          "valor": 82.92,
+          "quantidade": 1,
+          "pct": 0.4
+        },
+        {
+          "nome": "Adega Ailton",
+          "valor": 68,
+          "quantidade": 1,
+          "pct": 0.3
+        },
+        {
+          "nome": "Klj",
+          "valor": 54.9,
+          "quantidade": 1,
+          "pct": 0.2
+        },
+        {
+          "nome": "Adega do gui",
+          "valor": 30,
+          "quantidade": 1,
+          "pct": 0.1
+        },
+        {
+          "nome": "Waltinho",
+          "valor": 11.4,
+          "quantidade": 1,
+          "pct": 0.1
+        }
+      ],
+      "saidasPorForma": [
+        {
+          "nome": "Pix",
+          "valor": 19234.64,
+          "pct": 86.4
+        },
+        {
+          "nome": "Dinheiro",
+          "valor": 2574.08,
+          "pct": 11.6
+        },
+        {
+          "nome": "Boleto",
+          "valor": 463.82,
+          "pct": 2.1
+        }
+      ],
+      "entradasPorForma": [
+        {
+          "nome": "Pix",
+          "valor": 1500,
+          "pct": 50
+        },
+        {
+          "nome": "Cartão",
+          "valor": 1000,
+          "pct": 33.3
+        },
+        {
+          "nome": "Dinheiro",
+          "valor": 500,
+          "pct": 16.7
+        }
+      ],
+      "fixasDetalhe": [
+        {
+          "nome": "FOLHA PAGAMENTO",
+          "valor": 10000,
+          "pct": 37.4
+        },
+        {
+          "nome": "PRÓ-LABORE",
+          "valor": 8000,
+          "pct": 29.9
+        },
+        {
+          "nome": "EMPRESTIMOS",
+          "valor": 4278,
+          "pct": 16
+        },
+        {
+          "nome": "ALUGUEL",
+          "valor": 2300,
+          "pct": 8.6
+        },
+        {
+          "nome": "ENERGIA",
+          "valor": 1000,
+          "pct": 3.7
+        },
+        {
+          "nome": "CONTABILIDADE",
+          "valor": 700,
+          "pct": 2.6
+        },
+        {
+          "nome": "SOFTWARE",
+          "valor": 300,
+          "pct": 1.1
+        },
+        {
+          "nome": "INTERNET",
+          "valor": 160,
+          "pct": 0.6
+        }
+      ]
+    }
+  }
+}

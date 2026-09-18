@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "excel": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Volumes/Storage/www/doce-sabor/excel-mcp/dist/src/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

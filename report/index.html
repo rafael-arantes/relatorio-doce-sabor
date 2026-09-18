@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Financeiro — Doce Sabor</title>
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </span>
+      <div class="topbar__text">
+        <h1 class="title">Financeiro</h1>
+        <p class="subtitle">Doce Sabor</p>
+      </div>
+      <button id="refreshBtn" class="refresh-btn" type="button" title="Atualizar dados" aria-label="Atualizar dados">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="monthbar" aria-label="Navegação entre meses">
+    <button id="prevMonth" class="month-arrow" aria-label="Mês anterior">‹</button>
+    <div class="month-select-wrap">
+      <select id="monthSelect" class="month-select" aria-label="Selecionar mês"></select>
+    </div>
+    <button id="nextMonth" class="month-arrow" aria-label="Próximo mês">›</button>
+  </nav>
+
+  <main class="container">
+    <section aria-label="Resultado do mês">
+      <div id="hero" class="hero"></div>
+      <div id="bigNumbers" class="big-numbers"></div>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg> Gastos por categoria</h2>
+      <ol id="categoryRank" class="rank"></ol>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Formas de pagamento</h2>
+      <div class="donuts">
+        <div class="donut-block">
+          <h3 class="donut-block__title">Receitas</h3>
+          <div id="donutEntradas" class="donut" role="img" aria-label="Receitas por forma de pagamento"></div>
+          <ul id="legendEntradas" class="legend"></ul>
+        </div>
+        <div class="donut-block">
+          <h3 class="donut-block__title">Despesas</h3>
+          <div id="donutSaidas" class="donut" role="img" aria-label="Despesas por forma de pagamento"></div>
+          <ul id="legendSaidas" class="legend"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Fornecedores</h2>
+      <ol id="supplierRank" class="rank"></ol>
+    </section>
+
+    <section class="card">
+      <h2 class="card__title"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg> Despesas fixas</h2>
+      <ul id="fixasList" class="fixas"></ul>
+    </section>
+
+    <footer id="footer" class="footer"></footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js?v=5"></script>
+</body>
+</html>
