@@ -27,11 +27,20 @@ function canonicalCategoria(raw: Cell | undefined): string {
 
 function canonicalForma(raw: Cell | undefined): string {
   if (isBlank(raw)) return "Outro";
-  const key = stripAccents(String(raw).trim().toLowerCase());
-  if (key === "pix") return "Pix";
-  if (key === "dinheiro" || key === "especie") return "Dinheiro";
-  if (key === "cartao" || key === "credito" || key === "debito") return "Cartão";
-  if (key === "boleto" || key === "ted" || key === "doc") return "Boleto";
+  const key = stripAccents(String(raw).trim().toLowerCase()).replace(/\s+/g, " ");
+  if (!key) return "Outro";
+  // A ordem importa: "débito automático" é conta paga, "cartão de crédito" não é
+  // "cartão" genérico, e "crédito" vem antes de "cartão".
+  if (key.includes("automatico")) return "Boleto";
+  if (key.includes("credito")) return "Cartão de crédito";
+  if (key.includes("debito")) return "Débito";
+  if (key.includes("pix")) return "Pix";
+  if (key.includes("dinheiro") || key.includes("especie")) return "Dinheiro";
+  if (key.includes("refeicao")) return "Refeição";
+  if (key.includes("prazo")) return "Prazo";
+  if (key.includes("boleto")) return "Boleto";
+  if (/\bted\b|\bdoc\b/.test(key) || key.includes("transferencia")) return "Transferência";
+  if (key.includes("cartao")) return "Cartão";
   return titleCase(String(raw).trim()) || "Outro";
 }
 

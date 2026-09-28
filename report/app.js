@@ -8,8 +8,13 @@
   var FORMA_COLORS = {
     "Pix": "#0f766e",
     "Dinheiro": "#10b981",
+    "Cartão de crédito": "#f59e0b",
+    "Débito": "#8b5cf6",
+    "Refeição": "#ec4899",
+    "Prazo": "#3b82f6",
     "Cartão": "#f59e0b",
     "Boleto": "#ef4444",
+    "Transferência": "#a855f7",
     "Outro": "#64748b",
   };
 
